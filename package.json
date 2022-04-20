@@ -1,0 +1,30 @@
+{
+  "name": "pari",
+  "version": "1.0.0",
+  "description": "plan your events with pari",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkjmjohn/pari.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parkjmjohn/pari/issues"
+  },
+  "homepage": "https://github.com/parkjmjohn/pari#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "expo-sharing": "^10.1.1",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "jshint": "^2.13.4"
+  }
+}
