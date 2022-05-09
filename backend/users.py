@@ -1,5 +1,5 @@
 import datetime
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, status, Form, Header
 from pydantic import BaseModel, Field
 from uuid import UUID
 from typing import Optional
@@ -29,6 +29,10 @@ async def get_user_by_id(user_id: UUID):
 async def create_user(user: User):
     users.append(user)
     return user
+
+@app.post('/users/login')
+async def user_login(phone: str=Form(...), password: str=Form(...)):
+    return {'phone': {phone}}
 
 @app.put('/users/{user_id}')
 async def edit_user(user_id: UUID, user: User):

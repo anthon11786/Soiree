@@ -11,3 +11,4 @@ class Comment(BaseModel):
     id: UUID
     created_at: datetime.datetime
     content: str = Field(min_length=1)
+    
